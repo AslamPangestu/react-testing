@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloComponent from './components/Hello';
+import Role from './components/Role';
+import ShowHide from './components/ShowHide';
+import Variant from './components/Variant';
+import Event from './components/Event';
+import Axios from './components/Axios';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloComponent/>
+      <ShowHide/>
+      <Role/>
+      <Variant/>
+      <Event/>
+      <Axios/>
     </div>
   );
 }
